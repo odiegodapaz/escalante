@@ -1,0 +1,20 @@
+.navbar {
+  background-color: #1C3E7F; /* bg-info color */
+  padding: 1rem;
+}
+
+
+
+.title {
+  margin-left: 1rem;
+  margin-top: 0; /* Remove a margem superior para melhor alinhamento */
+  float: right; /* Alinhar à direita */
+}
+
+.mt2 {
+  margin-top: 20px;
+}
+
+.ms20 {
+  margin-left: 20px;
+}
