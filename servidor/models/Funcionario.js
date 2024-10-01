@@ -16,11 +16,11 @@ export const Funcionario = sequelize.define('funcionario', {
     atuacao: {
         type: DataTypes.BOOLEAN,
         allowNull: true
-    },
+    }, //tem permissão só para visualizar
     setorial: {
         type: DataTypes.BOOLEAN,
         allowNull: true
-    },
+    },// setorial pode alterar e adicionar funcionarios do seu turno
     senha: {
         type: DataTypes.STRING,
         allowNull: false
