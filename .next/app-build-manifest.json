@@ -1,0 +1,51 @@
+{
+  "pages": {
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/page.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
+    ],
+    "/expediente/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/expediente/page.css",
+      "static/chunks/app/expediente/page.js"
+    ],
+    "/cadastro/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/cadastro/page.css",
+      "static/chunks/app/cadastro/page.js"
+    ],
+    "/turnos/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/turnos/page.css",
+      "static/chunks/app/turnos/page.js"
+    ],
+    "/operacional/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/operacional/page.css",
+      "static/chunks/app/operacional/page.js"
+    ],
+    "/gerenciar/[expediente]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/gerenciar/[expediente]/page.css",
+      "static/chunks/app/gerenciar/[expediente]/page.js"
+    ],
+    "/gerenciar-turnos/[turno]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/gerenciar-turnos/[turno]/page.css",
+      "static/chunks/app/gerenciar-turnos/[turno]/page.js"
+    ]
+  }
+}

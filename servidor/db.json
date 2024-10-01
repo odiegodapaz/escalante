@@ -1,34 +1,38 @@
 {
   "guardas": [
     {
-      "id": "",
-      "nome": "",
-      "escala": "",
-      "turno": ""
-    },
-    {
       "nome": "nome aqui",
       "escala": "escala aqui",
-      "turno": "turno_1",
+      "turno": "241",
       "id": "NO-BXvp"
-    },
-    {
-      "nome": "juca bala",
-      "escala": "212",
-      "turno": "turno_1",
-      "id": "WS3SxY4"
     },
     {
       "nome": "guardinha da esquina",
       "escala": "414",
-      "turno": "turno_4",
+      "turno": "243",
       "id": "AMpSosL"
     },
     {
       "nome": "nome aqui",
       "escala": "escala aqui",
-      "turno": "turno_1",
+      "turno": "244",
       "id": "jKuZkF4"
+    },
+    {
+      "nome": "Diego",
+      "expediente": "23",
+      "turno": "241",
+      "fiscal": false,
+      "coordenador": true,
+      "id": "rfMPIRz"
+    },
+    {
+      "nome": "Otavio",
+      "expediente": "41",
+      "turno": "241",
+      "fiscal": true,
+      "coordenador": false,
+      "id": "Ma1rGO6"
     }
   ]
 }

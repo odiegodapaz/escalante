@@ -1,0 +1,53 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/Operacional.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************/
+.Operacional_container__BRYmh {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.Operacional_title__ZmS3o {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.Operacional_table__7nggC {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.Operacional_table__7nggC th, .Operacional_table__7nggC td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.Operacional_table__7nggC th {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+.Operacional_button__VAqmg {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.Operacional_button__VAqmg:hover {
+    background-color: #0056b3;
+}
+
+.Operacional_bold__Et6WB {
+    font-weight: bold;
+}
+

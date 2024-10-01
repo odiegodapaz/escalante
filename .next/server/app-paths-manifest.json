@@ -1,0 +1,9 @@
+{
+  "/expediente/page": "app/expediente/page.js",
+  "/cadastro/page": "app/cadastro/page.js",
+  "/operacional/page": "app/operacional/page.js",
+  "/turnos/page": "app/turnos/page.js",
+  "/gerenciar/[expediente]/page": "app/gerenciar/[expediente]/page.js",
+  "/gerenciar-turnos/[turno]/page": "app/gerenciar-turnos/[turno]/page.js",
+  "/page": "app/page.js"
+}
