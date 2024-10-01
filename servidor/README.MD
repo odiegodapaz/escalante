@@ -1,20 +1,20 @@
 # Atualizações do dia 30/09/2024
 
-# Criador arquivos na pasta controler:
+Criador arquivos na pasta controler:
 -> adminController
 ->funcionarioController
 
-# Criado o arquivo authMiddlware.js na pasta middlewares;
+Criado o arquivo authMiddlware.js na pasta middlewares;
 
-# Criado na pasta models o seguinte arquivo;
+Criado na pasta models o seguinte arquivo;
 -> Admin.js
 
-# Atualizados na pasta models os seguintes arquivos;
+Atualizados na pasta models os seguintes arquivos;
 -> Funcionario.js
 -> Turno.js
 -> Expediente.js
 
-# Atualizado app.js; 
+Atualizado app.js; 
 
 # Dependencias instaladas #
 +-- bcrypt@5.1.1
