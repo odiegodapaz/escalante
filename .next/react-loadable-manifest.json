@@ -1,26 +1,27 @@
 {
-  "components\\Titulo.jsx -> bootstrap/dist/js/bootstrap.bundle.min.js": {
-    "id": "components\\Titulo.jsx -> bootstrap/dist/js/bootstrap.bundle.min.js",
+  "components/Titulo.jsx -> bootstrap/dist/js/bootstrap.bundle.min.js": {
+    "id": 7160,
     "files": [
-      "static/chunks/_app-pages-browser_node_modules_bootstrap_dist_js_bootstrap_bundle_min_js.js"
+      "static/chunks/160.05bdce9e07d49fda.js"
     ]
   },
-  "node_modules\\jspdf\\dist\\jspdf.es.min.js -> canvg": {
-    "id": "node_modules\\jspdf\\dist\\jspdf.es.min.js -> canvg",
+  "node_modules/jspdf/dist/jspdf.es.min.js -> canvg": {
+    "id": 2865,
     "files": [
-      "static/chunks/_app-pages-browser_node_modules_canvg_lib_index_es_js.js"
+      "static/chunks/bc98253f.49ed0d91d36d04ec.js",
+      "static/chunks/124.896f7316a0db34a0.js"
     ]
   },
-  "node_modules\\jspdf\\dist\\jspdf.es.min.js -> dompurify": {
-    "id": "node_modules\\jspdf\\dist\\jspdf.es.min.js -> dompurify",
+  "node_modules/jspdf/dist/jspdf.es.min.js -> dompurify": {
+    "id": 1838,
     "files": [
-      "static/chunks/_app-pages-browser_node_modules_dompurify_dist_purify_js.js"
+      "static/chunks/838.b7d541ef963c9782.js"
     ]
   },
-  "node_modules\\jspdf\\dist\\jspdf.es.min.js -> html2canvas": {
-    "id": "node_modules\\jspdf\\dist\\jspdf.es.min.js -> html2canvas",
+  "node_modules/jspdf/dist/jspdf.es.min.js -> html2canvas": {
+    "id": 1173,
     "files": [
-      "static/chunks/_app-pages-browser_node_modules_html2canvas_dist_html2canvas_js.js"
+      "static/chunks/ad2866b8.989f74a0aef466bf.js"
     ]
   }
 }

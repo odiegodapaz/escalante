@@ -1,4 +1,4 @@
-// File: C:\Users\Win10\Desktop\Senac\Sem6\PD2\escalante\app\gerenciar-turnos\[turno]\page.jsx
+// File: /workspaces/escalante/app/gerenciar-turnos/[turno]/page.jsx
 import * as entry from '../../../../../app/gerenciar-turnos/[turno]/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

@@ -33,6 +33,9 @@ export default function Titulo() {
                         <li className="nav-item">
                             <Link className="nav-link" href="/operacional">Operacional</Link>
                         </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" href="/login">Login</Link>
+                        </li>
                     </ul>
                 </div>
             </div>
