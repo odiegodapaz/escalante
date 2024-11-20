@@ -1,38 +1,72 @@
 {
-  "guardas": [
+  "escalas": [
     {
-      "nome": "nome aqui",
-      "escala": "escala aqui",
+      "guardaId": "guarda1",
       "turno": "241",
-      "id": "NO-BXvp"
+      "mes": "2024-11",
+      "dia": "2024-11-01",
+      "id": "5a75"
     },
     {
-      "nome": "guardinha da esquina",
-      "escala": "414",
+      "guardaId": "guarda2",
+      "turno": "242",
+      "mes": "2024-11",
+      "dia": "2024-11-02",
+      "id": "f99e"
+    },
+    {
+      "guardaId": "guarda3",
       "turno": "243",
-      "id": "AMpSosL"
+      "mes": "2024-11",
+      "dia": "2024-11-03",
+      "id": "2ff3"
     },
     {
-      "nome": "nome aqui",
-      "escala": "escala aqui",
+      "guardaId": "guarda4",
       "turno": "244",
-      "id": "jKuZkF4"
+      "mes": "2024-11",
+      "dia": "2024-11-04",
+      "id": "cd13"
+    }
+  ],
+  "admins": [
+    {
+      "id": "b1a6",
+      "username": "teste",
+      "password": "teste",
+      "isAdmin": false
     },
     {
-      "nome": "Diego",
-      "expediente": "23",
-      "turno": "241",
-      "fiscal": false,
-      "coordenador": true,
-      "id": "rfMPIRz"
+      "id": "61e8",
+      "username": "tetse",
+      "password": "teste1",
+      "isAdmin": true
+    }
+  ],
+  "logs": [
+    {
+      "id": "b4e3",
+      "action": "Cadastro",
+      "description": "Novo administrador teste cadastrado",
+      "timestamp": "2024-11-13T00:00:08.562Z"
     },
     {
-      "nome": "Otavio",
-      "expediente": "41",
-      "turno": "241",
-      "fiscal": true,
-      "coordenador": false,
-      "id": "Ma1rGO6"
+      "id": "074b",
+      "action": "Cadastro",
+      "description": "Novo administrador tetse cadastrado",
+      "timestamp": "2024-11-13T00:00:34.215Z"
+    },
+    {
+      "id": "8558",
+      "action": "Login",
+      "description": "Administrador teste fez login",
+      "timestamp": "2024-11-13T00:00:46.128Z"
+    },
+    {
+      "id": "ac7f",
+      "action": "Login",
+      "description": "Administrador teste fez login",
+      "timestamp": "2024-11-19T23:00:20.827Z"
     }
   ]
 }
