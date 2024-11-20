@@ -1,82 +1,70 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+/* Turnos.module.css */
 
-.grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; /* Espaço entre colunas */
-}
-
-.coluna {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid #c0bebe;
-    border-radius: 8px;
-    padding: 10px;
-    margin-left: 15px;
-    width: 300px;
+.calendario {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 colunas para os dias da semana */
+    gap: 10px;
+    padding: 20px;
     background-color: #f9f9f9;
-}
-
-.title {
-    font-size: 1.5em;
-    color: #e6b800;
-    border: 1px solid #0056b3;
-    border-radius: 5px;
-    background-color: #0056b3;
-    height: 100%;
-}
-
-.header {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.card {
-    width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: #fff;
-}
-
-.body {
+    border-radius: 10px;
+  }
+  
+  .dia {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.item {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 5px;
-}
-
-.buttonGerenciar {
-    width: 100%;
+    justify-content: center;
     padding: 10px;
-    background-color: #ffcc00;
-    border: none;
+    border: 1px solid #ddd;
     border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dia h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .dia div {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .dia:hover {
+    background-color: #f0f0f0;
     cursor: pointer;
+  }
+  
+  .calendario .dia:nth-child(7n+1) {
+    color: #ff4d4f; /* Estilo para domingos */
+  }
+  
+  .calendario .dia:nth-child(7n) {
+    color: #1890ff; /* Estilo para sábados */
+  }
+  
+  .titulo {
     text-align: center;
-}
+    margin-bottom: 20px;
+    color: #333;
+  }
 
-.mostrarTodos {
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #007bff;
+  .editarBotao {
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #4caf50;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-bottom: 10px;
-}
+    font-size: 14px;
+  }
+  
+  .editarBotao:hover {
+    background-color: #45a049;
+  }
+  

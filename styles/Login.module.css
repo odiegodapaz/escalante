@@ -40,3 +40,27 @@
 .button:hover {
     background-color: #0056b3;
 }
+
+.passwordContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .passwordContainer input {
+    flex: 1;
+    padding-right: 80px; /* Espaço para o botão */
+  }
+  
+  .showPasswordButton {
+    margin-left: -60px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #0070f3;
+  }
+  
+  .showPasswordButton:hover {
+    text-decoration: underline;
+  }
+  

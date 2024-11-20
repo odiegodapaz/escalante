@@ -1,0 +1,25 @@
+.calendario {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .dia {
+    width: 14%;
+    min-width: 120px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  h4 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+  
+  div {
+    margin-bottom: 5px;
+    font-size: 0.9em;
+  }
+  
