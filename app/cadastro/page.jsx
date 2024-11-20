@@ -17,7 +17,7 @@ export default function Cadastro() {
     });
 
     async function enviaDados(data) {
-        const guarda = await fetch("http://localhost:3004/guardas", {
+        const guarda = await fetch("http://localhost:3004/escalas", {
             method: "POST",
             headers: { "Content-type": "application/json" },
             body: JSON.stringify({ ...data })

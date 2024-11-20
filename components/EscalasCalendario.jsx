@@ -1,24 +1,17 @@
-'use client';
-
 import { useEffect, useState } from 'react';
-import styles from '@/styles/Turnos.module.css'; // Ajuste o caminho de acordo com a sua estrutura
-import { format } from 'date-fns';
-import Link from 'next/link'; // Importando Link para navegação
+import { format, addMonths } from 'date-fns';
+import styles from '@/styles/EscalasCalendario.module.css';
 
-export default function Turnos() {
+export default function EscalasCalendario() {
   const [escalas, setEscalas] = useState([]);
   const [mesAtual, setMesAtual] = useState(format(new Date(), 'yyyy-MM'));
 
   useEffect(() => {
+    // Carregar escalas do banco de dados
     const carregarEscalas = async () => {
-      try {
-        const response = await fetch('http://localhost:3004/escalas');
-        const data = await response.json();
-        const escalasMesAtual = data.filter(escala => escala.mes === mesAtual);
-        setEscalas(escalasMesAtual);
-      } catch (error) {
-        console.error('Erro ao carregar escalas:', error);
-      }
+      const data = await fetch('http://localhost:3004/escalas').then(res => res.json());
+      const escalasMes = data.filter(escala => escala.mes === mesAtual);
+      setEscalas(escalasMes);
     };
 
     carregarEscalas();
@@ -31,7 +24,9 @@ export default function Turnos() {
     for (let i = 1; i <= diasNoMes; i++) {
       const dia = new Date(new Date().getFullYear(), new Date().getMonth(), i);
       const diaFormatado = format(dia, 'yyyy-MM-dd');
-      const escalasNoDia = escalas.filter(escala => escala.dia === diaFormatado);
+
+      // Filtrando as escalas para este dia
+      const escalasNoDia = escalas.filter(escala => escala.mes === mesAtual && escala.dia === diaFormatado);
 
       dias.push(
         <div key={i} className={styles.dia}>
@@ -39,9 +34,6 @@ export default function Turnos() {
           {escalasNoDia.map((escala) => (
             <div key={escala.guardaId}>
               Turno: {escala.turno} - Guarda: {escala.guardaId}
-              <Link href={`/gerenciar-turnos/${escala.turno}`}>
-                <button className={styles.editarBotao}>Editar</button>
-              </Link>
             </div>
           ))}
         </div>
@@ -53,7 +45,7 @@ export default function Turnos() {
 
   return (
     <div>
-      <h1 className={styles.titulo}>Gerenciador de Escalas</h1>
+      <h1>Escala de Serviço - {mesAtual}</h1>
       {renderCalendario()}
     </div>
   );
