@@ -1,27 +1,51 @@
+/* Container principal com duas colunas */
+.container {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: flex-start; /* Alinha os itens no topo */
+  gap: 2rem; /* Espaçamento entre as colunas */
+  padding: 2rem;
+  width: 100%;
+  max-width: 1200px; /* Limita a largura total */
+  margin: 0 auto; /* Centraliza o conteúdo na página */
+}
+
+/* Coluna do calendário */
 .calendarioContainer {
+  flex: 1; /* Define o calendário como uma das colunas */
   display: flex;
   justify-content: center;
-  margin-top: 20px;
-}
-
-.infoEscalas {
-  margin-top: 30px;
-  text-align: center;
-}
-
-.diaInfo {
-  background-color: #f4f4f4;
-  padding: 10px;
-  margin-bottom: 10px;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 1.5rem;
   border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Coluna das informações */
+.infoEscalas {
+  flex: 1; /* Define as informações como a outra coluna */
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de cada escala */
+.escalaInfo {
+  margin-bottom: 1.5rem;
+}
+
+/* Botão de edição */
 .editarBotao {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
   background-color: #007bff;
   color: white;
-  padding: 5px 10px;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
   cursor: pointer;
 }
 

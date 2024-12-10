@@ -1,0 +1,65 @@
+/* SuperAdmin.module.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+    background-color: #f4f4f9;
+}
+
+.title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.button:active {
+    background-color: #003f7d;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.options .button {
+    margin: 10px;
+}
+
+.logoutButton {
+    background-color: #d9534f;
+    margin-top: 20px;
+}
+
+.logoutButton:hover {
+    background-color: #c12e2a;
+}
+
+.logoutButton:active {
+    background-color: #a71d1a;
+}
