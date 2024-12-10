@@ -13,7 +13,7 @@ export default function Operacional() {
 
     useEffect(() => {
         async function getGuardas() {
-            const response = await fetch('http://localhost:3004/guardas');
+            const response = await fetch('http://localhost:3004/escalas');
             const dados = await response.json();
             setGuardas(dados);
             setIsLoading(false);

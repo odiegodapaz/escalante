@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import styles from '@/styles/Login.module.css';
-import { FaEye, FaEyeSlash } from 'react-icons/fa'; // Importando os ícones de olho
+import { FaEye, FaEyeSlash } from 'react-icons/fa'; 
 
 export default function Login() {
     const [formData, setFormData] = useState({ username: '', password: '' });
@@ -14,11 +14,13 @@ export default function Login() {
     useEffect(() => {
         const authToken = localStorage.getItem('authToken');
         if (authToken) {
-            const isAdmin = localStorage.getItem('isAdmin') === 'true';
-            if (isAdmin) {
-                router.push('/area-admin');
+            const role = localStorage.getItem('role');
+            if (role === 'superadmin') {
+                router.push('/super-admin'); // Redireciona para o Super Admin
+            } else if (role === 'admin') {
+                router.push('/area-admin'); // Redireciona para a Área Admin
             } else {
-                router.push('/area-usuario');
+                router.push('/'); // Redireciona para a Página Inicial
             }
         }
     }, [router]);
@@ -41,15 +43,18 @@ export default function Login() {
             );
 
             if (admin) {
-                localStorage.setItem('authToken', '123456');
-                localStorage.setItem('isAdmin', admin.isAdmin);
+                localStorage.setItem('authToken', '123456'); // Simula um token de autenticação
+                localStorage.setItem('role', admin.role); // Salva o papel do usuário
 
-                if (admin.isAdmin) {
+                if (admin.role === 'superadmin') {
                     toast.success('Login realizado com sucesso!');
-                    router.push('/area-admin');
+                    router.push('/super-admin'); // Redireciona para a área de Super Admin
+                } else if (admin.role === 'admin') {
+                    toast.success('Login realizado com sucesso!');
+                    router.push('/area-admin'); // Redireciona para a área Admin
                 } else {
-                    toast.info('Login realizado, mas você não tem acesso à área administrativa.');
-                    router.push('/area-usuario');
+                    toast.info('Login realizado com sucesso, mas você não tem acesso à área administrativa.');
+                    router.push('/area-usuario'); // Redireciona para a página usuario
                 }
             } else {
                 toast.error('Credenciais inválidas!');
@@ -66,10 +71,10 @@ export default function Login() {
                 <img src="../login.png" alt="Login Icon" />
             </div>
             <div className={styles.formWrapper}>
-                <h2 className={styles.title}>Member Login</h2>
+                <h2 className={styles.title}>Login</h2>
                 <form onSubmit={handleLogin}>
                     <div className={styles.formGroup}>
-                        <label className={styles.labelBold}>Usuario</label>
+                        <label className={styles.labelBold}>Usuário</label>
                         <input
                             type="text"
                             name="username"

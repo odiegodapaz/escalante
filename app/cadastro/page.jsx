@@ -12,7 +12,7 @@ export default function Cadastro() {
             turno: "",
             fiscal: false,
             coordenador: false,
-            isAdmin: false, // Adicionando campo para admin
+            isAdmin: false,
         }
     });
 

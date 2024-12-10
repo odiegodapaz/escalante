@@ -13,7 +13,7 @@ export default function Listagem() {
 
   useEffect(() => {
     async function getGuardas() {
-      const response = await fetch('http://localhost:3004/escalas');
+      const response = await fetch('http://localhost:3004/guardas');
       const dados = await response.json();
       setGuardas(dados);
       setIsLoading(false);
@@ -48,8 +48,6 @@ export default function Listagem() {
     acc[guarda.expediente].push(guarda);
     return acc;
   }, {});
-
-
 
 
   const listaAgrupada = Object.entries(agrupadosPorExpediente).map(([expediente, guardas]) => {
@@ -98,10 +96,10 @@ export default function Listagem() {
 
     const pesquisa = data.pesq.toUpperCase();
 
-    const response = await fetch('http://localhost:3004/guardas');
+    const response = await fetch('http://localhost:3004/escalas');
     const dados = await response.json();
 
-    const novosDados = dados.filter(
+    const novosDados = dados.escalas.filter(
       guarda =>
         guarda.nome.toUpperCase().includes(pesquisa) ||
         guarda.expediente.toUpperCase().includes(pesquisa) ||
@@ -117,9 +115,9 @@ export default function Listagem() {
   }
 
   async function mostrarTodos() {
-    const response = await fetch('http://localhost:3004/guardas');
+    const response = await fetch('http://localhost:3004/escalas');
     const dados = await response.json();
-    setGuardas(dados);
+    setGuardas(dados.escalas);
   }
 
   if (isLoading) {
