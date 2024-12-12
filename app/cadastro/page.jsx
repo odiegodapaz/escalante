@@ -11,22 +11,22 @@ export default function Cadastro() {
             expediente: "",
             turno: "",
             fiscal: false,
-            coordenador: false
+            coordenador: false,
+            isAdmin: false,
         }
     });
 
     async function enviaDados(data) {
-        const guarda = await fetch("http://localhost:3004/guardas",
-            {
-                method: "POST",
-                headers: { "Content-type": "application/json" },
-                body: JSON.stringify({ ...data })
-            },
-        )
-        if (guarda.status == 201) {
-            toast.success("Guarda inserido com sucesso")
+        const guarda = await fetch("http://localhost:3004/guardas", {
+            method: "POST",
+            headers: { "Content-type": "application/json" },
+            body: JSON.stringify({ ...data })
+        });
+        
+        if (guarda.status === 201) {
+            toast.success("Guarda inserido com sucesso");
         } else {
-            toast.error("Erro ao inserir o guarda")
+            toast.error("Erro ao inserir o guarda");
         }
     }
 
@@ -65,6 +65,12 @@ export default function Cadastro() {
                         <div className={styles.checkboxContainer}>
                             <input type="checkbox" className={`form-check-input ${styles.formCheckInput}`} id="coordenador" {...register("coordenador")} />
                             <label htmlFor="coordenador" className={styles.formLabel}>Coordenador</label>
+                        </div>
+                    </div>
+                    <div className="col-12">
+                        <div className={styles.checkboxContainer}>
+                            <input type="checkbox" className={`form-check-input ${styles.formCheckInput}`} id="isAdmin" {...register("isAdmin")} />
+                            <label htmlFor="isAdmin" className={styles.formLabel}>Administrador</label>
                         </div>
                     </div>
                 </div>

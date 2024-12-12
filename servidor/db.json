@@ -1,38 +1,86 @@
 {
   "guardas": [
     {
-      "nome": "nome aqui",
-      "escala": "escala aqui",
-      "turno": "241",
-      "id": "NO-BXvp"
-    },
-    {
-      "nome": "guardinha da esquina",
-      "escala": "414",
-      "turno": "243",
-      "id": "AMpSosL"
-    },
-    {
-      "nome": "nome aqui",
-      "escala": "escala aqui",
-      "turno": "244",
-      "id": "jKuZkF4"
-    },
-    {
-      "nome": "Diego",
-      "expediente": "23",
-      "turno": "241",
-      "fiscal": false,
+      "id": 1,
+      "nome": "João Silva",
+      "expediente": "Manhã",
       "coordenador": true,
-      "id": "rfMPIRz"
+      "fiscal": ["on"],
+      "turno": "7:00 - 15:00",
+      "dia": "2024-12-01",
+      "mes": "2024-12"
     },
     {
-      "nome": "Otavio",
-      "expediente": "41",
-      "turno": "241",
-      "fiscal": true,
+      "id": 2,
+      "nome": "Maria Oliveira",
+      "expediente": "Tarde",
       "coordenador": false,
-      "id": "Ma1rGO6"
+      "fiscal": ["off"],
+      "turno": "15:00 - 23:00",
+      "dia": "2024-12-01",
+      "mes": "2024-12"
+    },
+    {
+      "id": 3,
+      "nome": "João Silva",
+      "expediente": "Manhã",
+      "coordenador": true,
+      "fiscal": ["on"],
+      "turno": "7:00 - 15:00",
+      "dia": "2024-12-02",
+      "mes": "2024-12"
+    },
+    {
+      "id": 4,
+      "nome": "Maria Oliveira",
+      "expediente": "Tarde",
+      "coordenador": false,
+      "fiscal": ["off"],
+      "turno": "15:00 - 23:00",
+      "dia": "2024-12-02",
+      "mes": "2024-12"
+    }
+  ],
+  "admins": [
+    {
+      "id": "b1a6",
+      "username": "teste",
+      "password": "teste",
+      "isAdmin": true,
+      "role": "admin"
+    },
+    {
+      "id": "61e8",
+      "username": "superadmin",
+      "password": "superadmin123",
+      "isAdmin": true,
+      "role": "superadmin"
+    }
+  ],
+  "logs": [
+    {
+      "id": "b4e3",
+      "action": "Cadastro",
+      "description": "Novo administrador teste cadastrado",
+      "timestamp": "2024-11-13T00:00:08.562Z"
+    },
+    {
+      "id": "074b",
+      "action": "Cadastro",
+      "description": "Novo administrador teste cadastrado",
+      "timestamp": "2024-11-13T00:00:34.215Z"
+    },
+    {
+      "id": "8558",
+      "action": "Login",
+      "description": "Administrador teste fez login",
+      "timestamp": "2024-11-13T00:00:46.128Z"
+    },
+    {
+      "id": "ac7f",
+      "action": "Login",
+      "description": "Administrador teste fez login",
+      "timestamp": "2024-11-19T23:00:20.827Z"
     }
   ]
 }

@@ -1,4 +1,4 @@
-// File: C:\Users\Win10\Desktop\Senac\Sem6\PD2\escalante\app\layout.jsx
+// File: /workspaces/escalante/app/layout.jsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

@@ -1,4 +1,4 @@
-// File: C:\Users\Win10\Desktop\Senac\Sem6\PD2\escalante\app\operacional\page.jsx
+// File: /workspaces/escalante/app/operacional/page.jsx
 import * as entry from '../../../../app/operacional/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

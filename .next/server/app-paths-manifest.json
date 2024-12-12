@@ -1,9 +1,11 @@
 {
-  "/expediente/page": "app/expediente/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
   "/cadastro/page": "app/cadastro/page.js",
-  "/operacional/page": "app/operacional/page.js",
-  "/turnos/page": "app/turnos/page.js",
-  "/gerenciar/[expediente]/page": "app/gerenciar/[expediente]/page.js",
+  "/expediente/page": "app/expediente/page.js",
   "/gerenciar-turnos/[turno]/page": "app/gerenciar-turnos/[turno]/page.js",
-  "/page": "app/page.js"
+  "/gerenciar/[expediente]/page": "app/gerenciar/[expediente]/page.js",
+  "/listagem/page": "app/listagem/page.js",
+  "/operacional/page": "app/operacional/page.js",
+  "/page": "app/page.js",
+  "/turnos/page": "app/turnos/page.js"
 }

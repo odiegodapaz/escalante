@@ -50,8 +50,6 @@ export default function Listagem() {
   }, {});
 
 
-
-
   const listaAgrupada = Object.entries(agrupadosPorExpediente).map(([expediente, guardas]) => {
     const coordenador = guardas.find(guarda => guarda.coordenador) || { nome: "Não atribuído" };
     const fiscal = guardas.find(guarda => Array.isArray(guarda.fiscal) && guarda.fiscal.includes("on")) || { nome: "Não atribuído" };
@@ -98,10 +96,10 @@ export default function Listagem() {
 
     const pesquisa = data.pesq.toUpperCase();
 
-    const response = await fetch('http://localhost:3004/guardas');
+    const response = await fetch('http://localhost:3004/escalas');
     const dados = await response.json();
 
-    const novosDados = dados.filter(
+    const novosDados = dados.escalas.filter(
       guarda =>
         guarda.nome.toUpperCase().includes(pesquisa) ||
         guarda.expediente.toUpperCase().includes(pesquisa) ||
@@ -117,9 +115,9 @@ export default function Listagem() {
   }
 
   async function mostrarTodos() {
-    const response = await fetch('http://localhost:3004/guardas');
+    const response = await fetch('http://localhost:3004/escalas');
     const dados = await response.json();
-    setGuardas(dados);
+    setGuardas(dados.escalas);
   }
 
   if (isLoading) {

@@ -1,59 +1,54 @@
+/* Container principal com duas colunas */
 .container {
-    padding: 1rem;
-  }
-  
-  .header {
-    display: flex;
-    align-items: center;
-    background-color: #007bff;
-    color: #fff;
-    padding: 1rem;
-    border-radius: 0.25rem;
-  }
-  
-  .title {
-    margin-left: 0.5rem;
-    font-size: 1.5rem;
-  }
-  
-  .guardList {
-    margin-top: 1rem;
-  }
-  
-  .guardItem {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #f8f9fa;
-    padding: 0.5rem;
-    margin-bottom: 0.5rem;
-    border-radius: 0.25rem;
-  }
-  
-  .buttons {
-    display: flex;
-    gap: 0.5rem;
-  }
-  
-  .dropdownContainer {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-  
-  .dropdown {
-    padding: 0.5rem;
-    border: 1px solid #ced4da;
-    border-radius: 0.25rem;
-  }
-  
-  .addButton {
-    background-color: #28a745;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 0.25rem;
-    cursor: pointer;
-  }
-  
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: flex-start; /* Alinha os itens no topo */
+  gap: 2rem; /* Espaçamento entre as colunas */
+  padding: 2rem;
+  width: 100%;
+  max-width: 1200px; /* Limita a largura total */
+  margin: 0 auto; /* Centraliza o conteúdo na página */
+}
+
+/* Coluna do calendário */
+.calendarioContainer {
+  flex: 1; /* Define o calendário como uma das colunas */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Coluna das informações */
+.infoEscalas {
+  flex: 1; /* Define as informações como a outra coluna */
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de cada escala */
+.escalaInfo {
+  margin-bottom: 1.5rem;
+}
+
+/* Botão de edição */
+.editarBotao {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.editarBotao:hover {
+  background-color: #0056b3;
+}
