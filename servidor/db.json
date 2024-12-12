@@ -1,32 +1,44 @@
 {
-  "escalas": [
+  "guardas": [
     {
-      "guardaId": "guarda1",
-      "turno": "241",
-      "mes": "2024-11",
-      "dia": "2024-11-01",
-      "id": "5a75"
+      "id": 1,
+      "nome": "João Silva",
+      "expediente": "Manhã",
+      "coordenador": true,
+      "fiscal": ["on"],
+      "turno": "7:00 - 15:00",
+      "dia": "2024-12-01",
+      "mes": "2024-12"
     },
     {
-      "guardaId": "guarda2",
-      "turno": "242",
-      "mes": "2024-11",
-      "dia": "2024-11-02",
-      "id": "f99e"
+      "id": 2,
+      "nome": "Maria Oliveira",
+      "expediente": "Tarde",
+      "coordenador": false,
+      "fiscal": ["off"],
+      "turno": "15:00 - 23:00",
+      "dia": "2024-12-01",
+      "mes": "2024-12"
     },
     {
-      "guardaId": "guarda3",
-      "turno": "243",
-      "mes": "2024-11",
-      "dia": "2024-11-03",
-      "id": "2ff3"
+      "id": 3,
+      "nome": "João Silva",
+      "expediente": "Manhã",
+      "coordenador": true,
+      "fiscal": ["on"],
+      "turno": "7:00 - 15:00",
+      "dia": "2024-12-02",
+      "mes": "2024-12"
     },
     {
-      "guardaId": "guarda4",
-      "turno": "244",
-      "mes": "2024-11",
-      "dia": "2024-11-04",
-      "id": "cd13"
+      "id": 4,
+      "nome": "Maria Oliveira",
+      "expediente": "Tarde",
+      "coordenador": false,
+      "fiscal": ["off"],
+      "turno": "15:00 - 23:00",
+      "dia": "2024-12-02",
+      "mes": "2024-12"
     }
   ],
   "admins": [
@@ -34,13 +46,15 @@
       "id": "b1a6",
       "username": "teste",
       "password": "teste",
-      "isAdmin": false
+      "isAdmin": true,
+      "role": "admin"
     },
     {
       "id": "61e8",
-      "username": "tetse",
-      "password": "teste1",
-      "isAdmin": true
+      "username": "superadmin",
+      "password": "superadmin123",
+      "isAdmin": true,
+      "role": "superadmin"
     }
   ],
   "logs": [
@@ -53,7 +67,7 @@
     {
       "id": "074b",
       "action": "Cadastro",
-      "description": "Novo administrador tetse cadastrado",
+      "description": "Novo administrador teste cadastrado",
       "timestamp": "2024-11-13T00:00:34.215Z"
     },
     {
